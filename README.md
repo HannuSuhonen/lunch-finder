@@ -1,5 +1,4 @@
-# todo-app
+# portfolio-homepage
 
-A straightforward to use todo app to track all the tasks you'd like to complete.
+A responsive webpage to display my portfolio. it will also serve as my website.
 
-Link: https://hannusuhonen.github.io/todo-app/
