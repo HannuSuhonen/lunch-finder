@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24+Charted&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -66,4 +68,11 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+
+body{
+  font-family: 'Playfair Display', cursive, Arial, sans-serif;
+  background-color: gray;
+  height: 100vh;
 }
