@@ -75,3 +75,15 @@ body{
   /* background-color: gray; */
   height: 100vh;
 }
+header{
+  display: flex;
+}
+.projects{
+  display: grid;
+  grid-auto-flow: column;
+}
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
