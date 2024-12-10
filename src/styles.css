@@ -76,14 +76,45 @@ body{
   height: 100vh;
 }
 header{
-  display: flex;
-}
-.projects{
   display: grid;
-  grid-auto-flow: column;
+  place-items: center;
+  
 }
+.projects {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column on mobile */
+  gap: 20px;
+  place-items: center;
+}
+
+@media (min-width: 768px) {
+  .projects {
+      grid-template-columns: 1fr 1fr; /* Two columns on tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects {
+      grid-template-columns: 1fr 1fr 1fr; /* Three columns on desktops */
+  }
+  header {
+    grid-template-columns: 1fr 1fr; /* Three columns on desktops */
+}
+}
+
 footer{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
