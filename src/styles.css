@@ -75,6 +75,7 @@ h6 {
 header{
   display: grid;
   place-items: center;
+  gap: 0;
   padding: 10px;
   background-image: linear-gradient(170deg, #22313F 30%, white calc(30% + 2px))
 
@@ -86,9 +87,11 @@ header{
   place-items: center;
 }
 
-/* body{
-  margin: 5px 16px 5px 16px;
-} */
+.img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media (min-width: 768px) {
   .projects {
@@ -109,8 +112,10 @@ header{
   header {
     grid-template-columns: 1fr 1fr; /* Three columns on desktops */
   }
-  img{
+  .img-container{
     max-width: 100%;
+    align-items: center;
+    justify-self: right;
   }
 }
 
