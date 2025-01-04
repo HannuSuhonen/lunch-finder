@@ -90,7 +90,6 @@ header{
 .img-container{
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -103,6 +102,9 @@ header{
   img{
     max-width: 100%;
   }
+  .desc-text{
+    margin-right: 10%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -114,8 +116,10 @@ header{
   }
   .img-container{
     max-width: 100%;
-    align-items: center;
-    justify-self: right;
+    justify-self: flex-end;
+  }
+  .desc-text{
+    margin-right: 30%;
   }
 }
 
@@ -125,26 +129,23 @@ footer{
   justify-content: center;
 }
 
-section{
+.desc-text{
   display: flex;
   flex-direction: column;
-  place-items: center;
-
-}
-
-.desc-text{
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
   background-color: white;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
+.desc-text > div{
+  align-self: flex-end;
+}
+
 img {
   height: auto;
 }
 
-h1{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
