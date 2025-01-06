@@ -38,7 +38,6 @@ video,
 canvas,
 svg {
   display: block;
-  max-width: 60%;
 }
 
 /*
@@ -88,9 +87,21 @@ header{
 }
 
 .img-container{
+  max-width: 60%;
   display: flex;
   justify-content: center;
 }
+
+.project-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.project-img{
+  max-width: 60%;
+}
+
 
 @media (min-width: 768px) {
   .projects {
@@ -99,8 +110,12 @@ header{
   header {
     grid-template-columns: 1fr 1fr;
   }
-  img{
-    max-width: 100%;
+  .img-container{
+    max-width: 70%;
+    justify-self: flex-end;
+  }
+  .project-img{
+    max-width: 60%;
   }
   .desc-text{
     margin-right: 10%;
@@ -115,11 +130,14 @@ header{
     grid-template-columns: 1fr 1fr; /* Three columns on desktops */
   }
   .img-container{
-    max-width: 100%;
+    max-width: 50%;
     justify-self: flex-end;
   }
   .desc-text{
     margin-right: 30%;
+  }
+  .project-img{
+    max-width: 50%;
   }
 }
 
@@ -148,4 +166,5 @@ footer{
 img {
   height: auto;
 }
+
 
