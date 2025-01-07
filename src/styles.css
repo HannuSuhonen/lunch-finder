@@ -107,7 +107,7 @@ header{
   .projects {
       grid-template-columns: 1fr 1fr; /* Two columns on tablets */
   }
-  header {
+  header,footer {
     grid-template-columns: 1fr 1fr;
   }
   .img-container{
@@ -126,7 +126,7 @@ header{
   .projects {
       grid-template-columns: 1fr 1fr 1fr; /* Three columns on desktops */
   }
-  header {
+  header,footer {
     grid-template-columns: 1fr 1fr; /* Three columns on desktops */
   }
   .img-container{
@@ -142,9 +142,16 @@ header{
 }
 
 footer{
+  background-color: #22313F;
+  color: white;
+  display: grid;
+  place-items: center;
+  margin-top: 20px;
+}
+
+footer > div{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .desc-text{
@@ -166,5 +173,3 @@ footer{
 img {
   height: auto;
 }
-
-
