@@ -105,6 +105,10 @@ header{
   min-height: 250px;
   width: auto;
 }
+
+.devicon-github-original{
+  align-self: flex-end;
+}
 .project-img{
   max-width: 60%;
 }
