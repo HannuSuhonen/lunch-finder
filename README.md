@@ -1,4 +1,4 @@
-# portfolio-homepage
+# lunch-finder
 
-A responsive webpage to display my portfolio. it will also serve as my website.
+A simple web-app to help find lunch near you!
 
